@@ -1,0 +1,8 @@
+Stylizing images
+python -m src.stylize --content-image images/test/huang.jpg --style-model models/manga-face.pth --output images/results/huang_manga_face.jpg
+
+Stylizing video
+python -m src.stylize --content-image images/test/rick.mp4 --style-model models/mosaic-face.pth --output images/results/rick_mosaic.mkv --video
+
+Training models
+python -m src.train --content-images images/coco2017 --style-image images/styles/sunrise.png --output test_model/ --face
